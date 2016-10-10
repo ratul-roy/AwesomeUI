@@ -1,14 +1,13 @@
 {
-  "name": "angular2-webpack-starter",
+  "name": "Angular2 based Client SPA for Awesome UI",
   "version": "5.0.5",
-  "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
+  "description": "An Angular 2 Webpack Starter kit",
   "keywords": [
     "angular2",
     "webpack",
     "typescript"
   ],
-  "author": "Patrick Stapleton <patrick@angularclass.com>",
-  "homepage": "https://github.com/angularclass/angular2-webpack-starter",
+  "author": "ratul-roy",
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack --config config/webpack.dev.js --progress --profile",
@@ -24,9 +23,7 @@
     "docs": "npm run typedoc -- --options typedoc.json --exclude '**/*.spec.ts' ./src/",
     "e2e:live": "npm run e2e -- --elementExplorer",
     "e2e": "npm run protractor",
-    "github-deploy:dev": "webpack --config config/webpack.github-deploy.js --progress --profile --github-dev",
-    "github-deploy:prod": "webpack --config config/webpack.github-deploy.js --progress --profile --github-prod",
-    "github-deploy": "npm run github-deploy:dev",
+    
     "lint": "npm run tslint \"src/**/*.ts\"",
     "postversion": "git push && git push --tags",
     "prebuild:dev": "npm run clean:dist",
@@ -74,6 +71,7 @@
     "assets-webpack-plugin": "^3.4.0",
     "core-js": "^2.4.1",
     "http-server": "^0.9.0",
+    "i18n-webpack-plugin": "^0.3.0",
     "ie-shim": "^0.1.0",
     "rxjs": "5.0.0-beta.12",
     "zone.js": "~0.6.17"
@@ -137,13 +135,7 @@
     "webpack-md5-hash": "^0.0.5",
     "webpack-merge": "^0.14.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/angularclass/angular2-webpack-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/angularclass/angular2-webpack-starter/issues"
-  },
+  
   "engines": {
     "node": ">= 4.2.1",
     "npm": ">= 3"

@@ -1,7 +1,7 @@
 {
-  "name": "Angular2 based Client SPA for Awesome UI",
+  "name": "Demo_AwesomeUI",
   "version": "5.0.5",
-  "description": "An Angular 2 Webpack Starter kit",
+  "description": "Angular2 based Client SPA for Awesome UI",
   "keywords": [
     "angular2",
     "webpack",
